@@ -10,6 +10,10 @@
     </head>
 
     <body class="bg-white dark:bg-slate-900 transition ease-in-out">
+        <script>
+            const is_dark = localStorage.getItem('is_darkmode_set') === 'true';
+            enableDarkMode();
+        </script>
         <section>
             {% block content %}{% endblock %}
         </section>
