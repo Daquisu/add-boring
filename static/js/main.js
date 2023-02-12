@@ -20,8 +20,6 @@ function backToTop() {
     window.scrollTo(0, 0);
 }
 
-if (localStorage.getItem('is_darkmode_set') === 'true') enableDarkMode();
-
 document
     .getElementById('darkmode-toggle')
     .addEventListener('click', toggleDarkMode);
